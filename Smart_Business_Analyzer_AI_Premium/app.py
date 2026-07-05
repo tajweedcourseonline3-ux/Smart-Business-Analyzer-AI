@@ -76,12 +76,12 @@ page = st.sidebar.radio("Select Page", ["🏠 Home", "📂 Upload / Demo Data", 
 @st.cache_data
 def load_demo(kind):
     if kind == "Academy / School":
-        return pd.read_excel("sample_data/academy_school_demo.xlsx")
+       return pd.read_excel("Smart_Business_Analyzer_AI_Premium/sample_data/academy_school_demo.xlsx")
     if kind == "Hospital / Clinic":
-        return pd.read_excel("sample_data/hospital_demo.xlsx")
+        return pd.read_excel("Smart_Business_Analyzer_AI_Premium/sample_data/hospital_demo.xlsx")
     if kind == "Restaurant":
-        return pd.read_excel("sample_data/restaurant_demo.xlsx")
-    return pd.read_excel("sample_data/shop_demo.xlsx")
+        return pd.read_excel("Smart_Business_Analyzer_AI_Premium/sample_data/restaurant_demo.xlsx")
+    return pd.read_excel("Smart_Business_Analyzer_AI_Premium/sample_data/shop_demo.xlsx")
 
 def detect_business(df):
     cols = " ".join([c.lower() for c in df.columns])
